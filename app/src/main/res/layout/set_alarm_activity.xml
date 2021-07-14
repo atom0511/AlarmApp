@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <TimePicker
+        android:id="@+id/tp_time_picker"
+        android:amPmBackgroundColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_parrot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tp_time_picker"
+        android:layout_marginTop="@dimen/small_distance"
+        android:text="Lặp lại"
+        android:textSize="@dimen/normal_letters" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_parrot"
+    android:orientation="horizontal"
+    android:weightSum="7"
+    android:id="@+id/rl_list_th">
+    <Button
+        android:id="@+id/btn_t2"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cycke_design"
+        android:text="T2"/>
+    <Button
+        android:id="@+id/btn_t3"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cycke_design"
+        android:text="T3"/>
+    <Button
+        android:id="@+id/btn_t4"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cycke_design"
+        android:text="T4"/>
+    <Button
+        android:id="@+id/btn_t5"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cycke_design"
+        android:text="T5"/>
+    <Button
+        android:id="@+id/btn_t6"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cycke_design"
+        android:text="T6"/>
+    <Button
+        android:id="@+id/btn_t7"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cycke_design"
+        android:text="T7"/>
+    <Button
+        android:id="@+id/btn_cn"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cycke_design"
+        android:text="CN"/>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/normal_distance"
+        android:id="@+id/rl_loop"
+        android:layout_below="@id/rl_list_th"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_time_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Báo lại"
+            android:textSize="@dimen/normal_letters" />
+
+        <Switch
+            android:id="@+id/btn_retime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/normal_distance" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:id="@+id/btn_save"
+        android:background="@drawable/button_design"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
